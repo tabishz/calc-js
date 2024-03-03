@@ -11,3 +11,23 @@ body {
 .calculator-display {
   font-size: 3em;
 }
+
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.cal-btns {
+  font-size: 2em;
+  border-radius: 3em;
+  border: none;
+  min-width: 3.5rem;
+  padding: 0.3em;
+  margin: 0.1em;
+}
+
+.cal-btns:hover {
+  background-color: darkseagreen;
+}
