@@ -3,13 +3,14 @@
 <head>
   <title>Calculator</title>
   <link rel="stylesheet" href="style.css">
+  <script src="calc.js"></script>
 </head>
 
 <body>
   <h1>Calculator</h1>
   <div class="container">
     <div class="calculator">
-      <div class="calculator-display">0</div>
+      <input id="display" readonly>
       <div class="calculator-buttons">
         <button class="cal-btns num-btn" id="1">1</button>
         <button class="cal-btns num-btn" id="2">2</button>
@@ -27,7 +28,7 @@
         <button class="cal-btns num-btn" id="0">0</button>
         <button class="cal-btns fn-btn" id="period">.</button>
         <button class="cal-btns fn-btn" id="divide">÷</button>
-        <button class="cal-btns fn-btn" id="clear">C</button>
+        <button class="cal-btns fn-btn" id="clear" onClick="clearDisplayBtnHandler()">C</button>
         <button class="cal-btns fn-btn" id="memory">M</button>
         <button class="cal-btns fn-btn" id="answer">A</button>
         <button class="cal-btns fn-btn" id="equal">=</button>
