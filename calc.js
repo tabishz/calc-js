@@ -1,13 +1,17 @@
-document.getElementsByClassName('num-btn')
-    .eventListener('click', numberBtnHandler);
 
-const numberBtnHandler = () => {
+const numberBtnHandler = (event) => {
   const display = document.getElementById('display');
-  const number = parseInt(this.id);
-  display.textContent += number;
+  const number = parseInt(event.target.id);
+  display.value += number;
 }
 
 const clearDisplayBtnHandler = () => {
   const display = document.getElementById('display');
-  display.textContent = 0;
+  display.value = '';
 }
+
+document.querySelectorAll('.num-btn').forEach(
+  (btn) => {
+    btn.addEventListener('click', numberBtnHandler);
+  }
+);

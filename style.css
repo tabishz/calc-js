@@ -1,10 +1,12 @@
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Kode Mono', 'Courier New', monospace;
 }
 
 #display {
   border: none;
-  font-size: 3em;
+  width: 100%;
+  font-size: 5em;
+  font-family: 'Kode Mono', 'Courier New', monospace;
 }
 
 .container {
@@ -28,7 +30,7 @@ body {
   font-size: 2em;
   border-radius: 3em;
   border: none;
-  min-width: 3.5rem;
+  min-width: 1rem;
   padding: 0.3em;
   margin: 0.1em;
   background-color: gray;
