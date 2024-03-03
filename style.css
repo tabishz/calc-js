@@ -26,8 +26,21 @@ body {
   min-width: 3.5rem;
   padding: 0.3em;
   margin: 0.1em;
+  background-color: gray;
+}
+.cal-btns:hover {
+  background-color: lightgray;
+}
+.cal-btns:active {
+  background-color: whitesmoke;
 }
 
-.cal-btns:hover {
-  background-color: darkseagreen;
+.fn-btn {
+  background-color: coral;
+}
+.fn-btn:hover {
+  background-color: orange;
+}
+.fn-btn:active {
+  background-color: orangered;
 }
