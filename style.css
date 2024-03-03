@@ -1,0 +1,13 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.calculator-display {
+  font-size: 3em;
+}
