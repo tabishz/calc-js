@@ -1,12 +1,12 @@
+const display = document.getElementById('display');
 
 const numberBtnHandler = (event) => {
-  const display = document.getElementById('display');
   const number = parseInt(event.target.id);
   display.value += number;
+  resizeDisplayFonts();
 }
 
 const clearDisplayBtnHandler = () => {
-  const display = document.getElementById('display');
   display.value = '';
 }
 
@@ -15,3 +15,10 @@ document.querySelectorAll('.num-btn').forEach(
     btn.addEventListener('click', numberBtnHandler);
   }
 );
+
+const resizeDisplayFonts = () => {
+  const textLength = display.value.length;
+  const fontSize = Math.min(5, 5 - textLength / 4);
+  display.style.fontSize = fontSize + 'em';
+  console.log(`setting font size to ${fontSize}em`);
+};
