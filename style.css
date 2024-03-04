@@ -18,7 +18,8 @@ body {
   border: 0.2em solid gray;
   border-radius: 1em;
   padding: 0.4em;
-  max-width: 18em;
+  min-width: 16em;
+  max-width: 24em;
 }
 
 #display {
@@ -68,4 +69,8 @@ body {
 }
 .fn-btn:active {
   background-color: orangered;
+}
+
+.op-btn {
+  background-color: hsla(17, 100%, 54%, 1);
 }
