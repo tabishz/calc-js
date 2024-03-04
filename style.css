@@ -7,16 +7,6 @@ body {
   margin-bottom: 0.2em;
 }
 
-#display {
-  border: none;
-  border-radius: 0.1em;
-  max-width: 3.5em;
-  font-size: 5em;
-  font-family: 'Kode Mono', 'Courier New', monospace;
-  overflow: auto;
-  background-color: lightgray;
-}
-
 .container {
   width: 100%;
   margin: 0 auto;
@@ -28,6 +18,22 @@ body {
   border: 0.2em solid gray;
   border-radius: 1em;
   padding: 0.4em;
+  max-width: 18em;
+}
+
+#display {
+  padding: 0.3em;
+  margin: auto;
+  border: none;
+  border-radius: 0.1em;
+  width: 100%;
+  font-size: 5em;
+  min-height: 16vh;
+  font-family: 'Kode Mono', 'Courier New', monospace;
+  overflow: hidden;
+  display: block;
+  background-color: lightgray;
+  box-sizing: border-box;
 }
 
 .calculator-buttons {
